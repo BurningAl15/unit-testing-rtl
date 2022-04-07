@@ -5,7 +5,7 @@ import Counter from './index';
 
 describe("Counter Tests", () => {
   it('elements show in the component', () => {
-    const { getByTestId } = render(<Counter />);
+    const { getByTestId } = render(<Counter initialValue={0} />);
     const plus = getByTestId('plus');
     const count = getByTestId('count');
     const minus = getByTestId('minus');
@@ -18,7 +18,7 @@ describe("Counter Tests", () => {
   });
 
   it('pressing plus grows the value of count', () => {
-    const { getByTestId } = render(<Counter />);
+    const { getByTestId } = render(<Counter initialValue={0} />);
     const plus = getByTestId('plus');
     const count = getByTestId('count');
     const minus = getByTestId('minus');
@@ -31,7 +31,7 @@ describe("Counter Tests", () => {
   });
 
   it('pressing minus grows the value of count', () => {
-    const { getByTestId } = render(<Counter />);
+    const { getByTestId } = render(<Counter initialValue={0} />);
     const plus = getByTestId('plus');
     const count = getByTestId('count');
     const minus = getByTestId('minus');
@@ -44,7 +44,7 @@ describe("Counter Tests", () => {
   });
 
   it('pressing minus grows the value of count', () => {
-    const { getByTestId } = render(<Counter />);
+    const { getByTestId } = render(<Counter initialValue={0} />);
     const plus = getByTestId('plus');
     const count = getByTestId('count');
     const minus = getByTestId('minus');

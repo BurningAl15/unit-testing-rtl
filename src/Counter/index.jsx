@@ -25,8 +25,8 @@ const useStyles = makeStyles((theme) => ({
   }
 }));
 
-const Counter = () => {
-  const [count, setCount] = useState(0);
+const Counter = ({ initialValue = 0 }) => {
+  const [count, setCount] = useState(initialValue);
   const classes = useStyles();
 
   return (
